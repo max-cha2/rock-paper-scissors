@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+body{
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text{
+    font-size: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.rules{
+    display: flex;
+    justify-content: center;
+    font: 18px;
+}
+
+.container-one{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 24px;
+    padding: 24px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: black;
+}
+
+.rock-button{
+    border-style: double;
+    border-color: red;
+    color: red;
+    font-size: 16px;
+}
+
+.paper-button{
+    border-style: double;
+    border-color: blue;
+    color: blue;
+    font-size: 16px;
+}
+
+.scissor-button{
+    border-style: double;
+    border-color:green;
+    color: green;
+    font-size: 16px;
+}
+
+#container-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 24px;
+}
+
+#display-player-pick, #display-computer-pick, #display-result, #display-winner, #display-player-count, #display-computer-count{
+    color:white;
+    font-size: 20px;
+}
+
+
