@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--<div class="header">
+    <div class="header">
         <div class="text">rock, paper, scissors</div>
         <div class="rules">the rules of the game are simple: rock beats scissor, scissor beats paper, and paper beats rock.</div>
         <div class="rules">beat the computer. first to five wins.</div>
@@ -13,54 +13,16 @@
     <div class="container-one">
         <button class="rock-button">rock</button>
         <button class="paper-button">paper</button>
-        <button class="scissor-button">scissor</button>
-    </div>-->
-    <script>
-        function computerPlay(){
-            let pick = Math.floor(Math.random() * 3);
-            if (pick === 0){
-                return 'rock';
-            }
-            else if(pick === 1){
-                return 'paper';
-            }
-            else if (pick === 2){
-                return 'scissor';
-            }
-        }
-
-        function playerRound(playerSelection, computerSelection){
-            if (playerSelection === computerSelection){
-                console.log("tie");
-            }
-            else if(playerSelection ==='paper' && computerSelection === 'rock'){
-                console.log("player wins");
-            }
-            else if (playerSelection === 'rock' && computerSelection === 'scissor'){
-                console.log("player wins");
-            }
-            else if(playerSelection === 'scissor' && computerSelection === 'paper'){
-                console.log("player wins");
-            }
-            else if(playerSelection === 'rock' && computerSelection === 'paper'){
-                console.log("computer wins");
-            }
-            else if(playerSelection === 'paper' && computerSeletion === 'scissor'){
-                console.log("computer wins");
-            }
-            else if(playerSelection ==='scissor' && computerSelection === 'rock'){
-                console.log("computer wins");
-            }
-        }
-
-        function game(){
-            for(let i = 0; i < 5; i++){
-                let input = prompt("rock, paper, or scissor? ");
-                playerRound(input.toLowerCase(), computerPlay());
-            }
-        }
-
-        game();
-    </script>
+        <button class="scissor-button">scissors</button>
+    </div>
+    <div id="container-two">
+        <div id="display-player-pick"></div>
+        <div id="display-computer-pick"></div>
+        <div id="display-result"></div>
+        <div id="display-player-count"></div>
+        <div id="display-computer-count"></div>
+        <div id="display-winner"></div>
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
